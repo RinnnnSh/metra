@@ -1,13 +1,366 @@
-.main-premium {
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;800&display=swap');
 
+
+
+.catalogue__heading-block {
+
+}
+.catalogue__heading-block .phone-other {
+  position: relative;
+  display: inline-block;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 40px;
+
+  color: #FFFFFF;
+}
+.catalogue__heading-block .phone-other::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("new_img/icons/phone-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+}
+.catalogue__heading-btn {
+  display: inline-block;
+  width: 140px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+
+.breadcrumbs--current {
+  color: #fff;
+}
+
+.main-premium {
+  max-width: 1200px;
+  background-image: url("new_img/top-bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 700px;
+  overflow: hidden;
 }
 
 .wrapper-holder {
-  
+
 }
 
 .heading-catalogue {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 30px 130px 20px;
+
+  border: 1px solid red;
+}
+
+
+.heading-catalogue .heading-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.top-screen {
+  position: relative;
+  padding-top: 180px;
   padding-left: 130px;
+  padding-right: 130px;
+
+  border: 1px solid orange;
+
+}
+.top-screen::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 320px;
+  border: 40px solid rgba(255, 164, 23, 0.15);
+  box-sizing: border-box;
+
+  position: absolute;
+  bottom: -20px;
+  right: -50px;
+}
+
+.top-screen__title {
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  color: #FFA417;
+}
+.top-screen__text-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid red;
+
+}
+.top-screen__text-item {
+  width: 49%;
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+
+  border: 1px solid white;
+}
+
+.top-screen__btn-container {
+  margin-top: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.top-screen__btn {
+  display: block;
+  width: 300px;
+  height: 50px;
+  border: 2px solid #FFA417;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 50px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+.top-screen__btn:first-child {
+  background: #FFA417;
+
+}
+
+
+
+.weights-menu {
+  margin-top: 56px;
+  margin-bottom: 30px;
+}
+.weights-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+}
+.weights-menu__item {
+  position: relative;
+  width: 310px;
+  min-height: 250px;
+  box-sizing: border-box;
+  padding: 40px;
+
+  flex-grow: 1;
+}
+.weights-menu__item:hover {
+  background: rgba(255, 164, 23, 0.15);
+  border-bottom: 5px solid #FFA417;
+}
+.weights-menu__item:hover a {
+  text-decoration: none;
+}
+.weights-menu__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 120px;
+  background: #EBEBEB;
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+
+.weights-menu__item-link {
+
+}
+.weights-menu__item-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #153268;
+}
+.weights-menu__item-description {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+
+
+.advanages {
+  position: relative;
+  margin-top: 85px;
+  margin-bottom: 40px;
+  padding-left: 130px;
+  background-image: url("new_img/decor1.png");
+  background-position: 70% 20px;
+  background-repeat: no-repeat;
+
+  border: 1px solid red;
+}
+.advanages::after {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 220px;
+  background: rgba(255, 164, 23, 0.15);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.advanages__header {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  text-align: left;
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #153268;
+
+  border: 1px solid blue;
+
+}
+
+.advanages__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid red;
+
+}
+.advanages__cont:first-child {
+  width: 460px;
+
+  border: 1px solid green;
+}
+
+
+
+.catalogue-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.catalogue-list__item {
+  position: relative;
+  margin-bottom: 10px;
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.catalogue-list__item::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("new_img/icons/check-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+}
+
+.catalogue__feedback {
+  max-width: 1200px;
+  padding: 40px 130px;
+  background: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+}
+.ui-button-orange {
+  width: 300px;
+  height: 40px;
+  background: #FFA417;
+  border-radius: 5px;
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.ui-button-orange:hover {
+  text-decoration: underline;
+}
+.ui-section-title--catalogue {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #153268;
 }
