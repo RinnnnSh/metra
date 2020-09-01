@@ -556,6 +556,7 @@
   .advanages {
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 80px;
   }
   .catalogue-list {
     padding-left: 40px;
@@ -716,6 +717,7 @@
   .spesials {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 0;
     margin-bottom: 80px;
   }
   .catalogue-list {
