@@ -801,3 +801,132 @@
     width: 100%;
   }
 }
+
+
+.use-for {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-right: 130px;
+  padding-bottom: 50px;
+}
+
+.use-for--absolute {
+  background-image: url("new_img/truck.png");
+  background-repeat: no-repeat;
+  background-position: -230px -85px;
+}
+
+.use-for::before {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 285px;
+  background: rgba(255, 164, 23, 0.15);
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+.use-for__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.use-for__cont-img {
+  padding-top: 66px;
+  padding-left: 4.3%;
+  margin-right: 40px;
+}
+.use-for__cont-img img {
+  width: 100%;
+  height: auto;
+}
+.use-for__cont-text {
+  flex-basis: 460px;
+  padding-bottom: 40px;
+
+  background-image: url("new_img/decor1.png");
+  background-position: 0 98%;
+  background-repeat: no-repeat;
+}
+
+.use-for__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #153268;
+}
+.use-for__text {
+  position: relative;
+  margin-bottom: 10px;
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+
+  color: #000000;
+}
+
+.use-for__highlight {
+
+}
+
+.use-for__text--arrow::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 11px;
+  background: url("new_img/icons/icon-1.svg") no-repeat center;
+  position: absolute;
+  top: 4px;
+  left: -30px;
+}
+
+@media (max-width: 1230px) {
+  .use-for {
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 750px) {
+  .use-for {
+    padding: 0 80px;
+  }
+  .use-for--absolute {
+    background: none;
+  }
+  .use-for__wrapper {
+    flex-direction: column-reverse;
+  }
+  .use-for__cont-img {
+    padding-top: 0px;
+    padding-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .use-for__cont-text {
+    flex-basis: 100%;
+}
+
+@media (max-width: 700px) {
+  .use-for {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  .use-for__text--arrow::before {
+    display: none;
+  }
+}
