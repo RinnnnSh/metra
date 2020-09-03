@@ -1210,6 +1210,7 @@
   margin-bottom: 30px;
 }
 .models_title {
+  text-align: left;
   margin: 0;
   padding: 0;
   margin-right: 20px;
@@ -1228,7 +1229,7 @@
 
 }
 .models_table th {
-  padding: 8px 20px;
+  padding: 8px 15px;
   min-width: 150px;
   border: 1px solid #EBEBEB;
   background-color: #F2F2F2;
@@ -1243,7 +1244,7 @@
 
 }
 .models_table td {
-  padding: 8px 20px;
+  padding: 8px 15px;
 
   min-width: 150px;
   border: 1px solid #EBEBEB;
@@ -1257,6 +1258,34 @@
   line-height: 20px;
 
   color: #000000;
+}
+
+.models__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.models_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.models_wrapper div {
+  flex-basis: 459px;
+}
+.models_wrapper .models__text {
+  margin-bottom: 10px;
+
 }
 
 .models__table-of {
@@ -1283,5 +1312,153 @@
   .models {
     padding: 0 20px;
     margin-bottom: 80px;
+  }
+}
+
+
+.sensors2 {
+  position: relative;
+  padding: 80px 130px;
+  margin-bottom: 80px;
+  background: #F2F2F2;
+}
+.sensors2_text {
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+color: #000000;
+}
+
+.sensors2_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sensors2_item {
+  flex-basis: 220px;
+  flex-shrink: 1;
+}
+.sensors2_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.sensors2_item img {
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.15));
+}
+
+.sensors2::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 320px;
+  border: 40px solid rgba(255, 164, 23, 0.15);
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 75%;
+  right: -50px;
+}
+
+@media (max-width: 1230px) {
+  .sensors2 {
+    padding: 55px 80px;
+  }
+}
+
+@media (max-width: 750px) {
+  .sensors2_list {
+    flex-wrap: wrap;
+  }
+  .sensors2_item {
+    margin-bottom: 30px;
+  }
+  .sensors2_item:not(:last-child) {
+    margin-right: 0px;
+  }
+  .sensors2::after {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .sensors2 {
+    padding: 40px 20px;
+    margin-bottom: 80px;
+  }
+}
+
+
+
+
+
+.certif {
+  padding: 0 210px 0 130px;
+  margin-bottom: 80px;
+}
+
+.certif__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.certif__cont-img {
+  flex-basis: 153px;
+  flex-shrink: 0;
+  margin-right: 100px;
+}
+.certif__img {
+  width: 100%;
+  height: auto;
+
+}
+.certif__cont {
+  flex-basis: 620px;
+}
+.certif__text {
+  margin-bottom: 10px;
+  font-family: 'Exo 2', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+@media (max-width: 1230px) {
+  .certif {
+    padding: 0 100px 0 80px;
+  }
+  .certif__cont-img {
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 750px) {
+
+}
+
+@media (max-width: 700px) {
+  .certif {
+    padding: 40px 20px;
+    margin-bottom: 50px;
+  }
+  .certif__wrapper {
+    flex-wrap: wrap;
+  }
+  .certif__cont-img {
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
   }
 }
