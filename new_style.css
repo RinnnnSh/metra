@@ -7,8 +7,8 @@
   padding: 30px 130px 20px;
   position: absolute;
   z-index: 2;
-
-  max-width:
+  width: calc(100% - 230px);
+  max-width: 1200px;
 }
 
 
@@ -107,17 +107,6 @@
   overflow: hidden;
 }
 
-
-
-
-.main-premium--absolute .top-screen,
-.main-premium--optium .top-screen {
-  background-image: url("new_img/top-bg3.jpg");
-}
-.main-premium--universal .top-screen {
-  background-image: url("new_img/top-bg2.jpg");
-}
-
 .top-screen {
   z-index: 0;
   position: relative;
@@ -133,11 +122,17 @@
   background-size: cover;
   background-color: #153268;
 }
-.main-premium--optium .top-screen,
-.main-premium--univarsal .top-screen,
-.main-premium--absolute .top-screen {
+
+.main-premium--absolute .top-screen,
+.main-premium--optium .top-screen {
   padding-top: 345px;
+  background-image: url("new_img/top-bg3.jpg");
 }
+.main-premium--universal .top-screen {
+  padding-top: 345px;
+  background-image: url("new_img/top-bg2.jpg");
+}
+
 .top-screen::after {
   content: "";
   display: block;
@@ -336,8 +331,11 @@
 
   flex-grow: 1;
 }
+
 .weights-menu__item:hover {
-  background: rgba(255, 164, 23, 0.15), #fff;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+  linear-gradient(180deg, rgba(255, 164, 23, 0.15) 0%, rgba(255, 164, 23, 0.15) 100%),
+  linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
   border-bottom: 5px solid #FFA417;
 }
 .weights-menu__item:hover a {
